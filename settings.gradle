@@ -8,3 +8,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "multiple-module-detekt-prototype"
 include ':app'
+enableFeaturePreview("VERSION_CATALOGS")
+
