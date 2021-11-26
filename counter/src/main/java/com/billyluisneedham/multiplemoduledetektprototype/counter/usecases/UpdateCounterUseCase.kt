@@ -1,4 +1,4 @@
-package com.billyluisneedham.multiplemoduledetektprototype.counter
+package com.billyluisneedham.multiplemoduledetektprototype.counter.usecases
 
 internal class UpdateCounterUseCase(
     private val isWithinLimits: CountIsWithinLimitsUseCase
@@ -17,10 +17,6 @@ internal class UpdateCounterUseCase(
             false -> Result.failure(OutOfCounterLimits())
         }
 
+    internal class OutOfCounterLimits : Exception()
 }
 
-internal class OutOfCounterLimits : Exception()
-
-internal interface CountIsWithinLimitsUseCase {
-    fun execute(request: Int): Boolean
-}

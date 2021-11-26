@@ -1,5 +1,7 @@
 package com.billyluisneedham.multiplemoduledetektprototype.counter
 
+import com.billyluisneedham.multiplemoduledetektprototype.counter.usecases.CountIsWithinLimitsUseCase
+import com.billyluisneedham.multiplemoduledetektprototype.counter.usecases.UpdateCounterUseCase
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat
 import org.junit.Test
@@ -34,7 +36,7 @@ class UpdateCounterUseCaseTest {
         val result = updateCounterUseCase.execute(testInt)
         result.onFailure {
             when (it) {
-                is OutOfCounterLimits -> isOutOfCounterLimitsException = true
+                is UpdateCounterUseCase.OutOfCounterLimits -> isOutOfCounterLimitsException = true
             }
         }
         assertThat(isOutOfCounterLimitsException, `is`(true))
