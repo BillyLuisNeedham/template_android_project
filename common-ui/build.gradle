@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
 }
 
@@ -7,16 +7,13 @@ android {
     compileSdk libs.versions.compileSdk.get() as Integer
 
     defaultConfig {
-        applicationId libs.versions.applicationId.get()
         minSdk libs.versions.minSdk.get() as Integer
         targetSdk libs.versions.targetSdk.get() as Integer
         versionCode libs.versions.versionCode.get() as Integer
         versionName libs.versions.versionName.get()
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -25,20 +22,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
-    compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = '1.8'
-        useIR = true
-    }
     buildFeatures {
         compose true
     }
     composeOptions {
         kotlinCompilerExtensionVersion libs.versions.compose.get()
         kotlinCompilerVersion libs.versions.kotlin.get()
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
     }
     packagingOptions {
         resources {
@@ -57,4 +53,5 @@ dependencies {
     androidTestImplementation libs.espresso
     androidTestImplementation libs.compose.uiTestJunit
     debugImplementation libs.bundles.composeDebug
+
 }
