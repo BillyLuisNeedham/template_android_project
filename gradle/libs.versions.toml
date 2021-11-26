@@ -18,7 +18,7 @@ compose = "1.0.1"
 composeActivity = "1.4.0"
 espresso = "3.4.0"
 material = "1.4.0"
-junit = "4.12"
+junit = "4.13"
 
 [libraries]
 
