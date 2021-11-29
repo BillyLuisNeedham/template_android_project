@@ -12,7 +12,8 @@
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/common-ui" />
-            <option value="$PROJECT_DIR$/counter" />
+            <option value="$PROJECT_DIR$/domain" />
+            <option value="$PROJECT_DIR$/ui-counter" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />

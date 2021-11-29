@@ -11,4 +11,5 @@ include ':app'
 include ':common-ui'
 enableFeaturePreview("VERSION_CATALOGS")
 
-include ':counter'
+include ':ui-counter'
+include ':domain'
