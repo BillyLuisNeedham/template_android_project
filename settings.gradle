@@ -13,3 +13,4 @@ enableFeaturePreview("VERSION_CATALOGS")
 
 include ':ui-counter'
 include ':domain'
+include ':data'

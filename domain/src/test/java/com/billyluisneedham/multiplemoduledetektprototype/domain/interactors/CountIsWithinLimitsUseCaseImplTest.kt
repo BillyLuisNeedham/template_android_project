@@ -1,4 +1,4 @@
-package com.billyluisneedham.multiplemoduledetektprototype.counter.usecases
+package com.billyluisneedham.multiplemoduledetektprototype.domain.interactors
 
 import org.hamcrest.CoreMatchers.`is`
 import org.hamcrest.MatcherAssert.assertThat

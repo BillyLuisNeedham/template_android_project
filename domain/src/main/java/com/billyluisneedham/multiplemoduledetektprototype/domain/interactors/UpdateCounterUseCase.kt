@@ -1,4 +1,4 @@
-package com.billyluisneedham.multiplemoduledetektprototype.counter.usecases
+package com.billyluisneedham.multiplemoduledetektprototype.domain.interactors
 
 internal class UpdateCounterUseCase(
     private val isWithinLimits: CountIsWithinLimitsUseCase

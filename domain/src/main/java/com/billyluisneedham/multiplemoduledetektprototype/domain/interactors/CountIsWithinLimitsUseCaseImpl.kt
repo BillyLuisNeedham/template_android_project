@@ -1,6 +1,7 @@
-package com.billyluisneedham.multiplemoduledetektprototype.counter.usecases
+package com.billyluisneedham.multiplemoduledetektprototype.domain.interactors
 
-internal object CountIsWithinLimitsUseCaseImpl : CountIsWithinLimitsUseCase {
+internal object CountIsWithinLimitsUseCaseImpl :
+    CountIsWithinLimitsUseCase {
     private const val MIN_VALUE = 0
     private const val MAX_VALUE = 10
 
