@@ -15,9 +15,10 @@ androidX-junit = "1.1.3"
 androidX-lifecycle = "2.4.0"
 compose = "1.0.1"
 composeActivity = "1.4.0"
-espresso = "3.4.0"
+dagger = "2.40.2"
 hilt = "2.40.2"
 kotlin = "1.5.21"
+coroutines = "1.5.2"
 material = "1.4.0"
 junit = "4.13"
 
@@ -41,7 +42,8 @@ compose-uiTestJunit = { module = "androidx.compose.ui:ui-test-junit4", version.r
 compose-uiTooling = { module = "androidx.compose.ui:ui-tooling", version.ref = "compose" }
 compose-uiTestManifest = { module = "androidx.compose.ui:ui-test-manifest", version.ref = "compose" }
 
-espresso = { module = "androidx.test.espresso:espresso-core", version.ref = "espresso" }
+dagger-compiler = { module = "com.google.dagger:dagger-compiler", version.ref = "dagger" }
+dagger-dagger = { module = "com.google.dagger:dagger", version.ref = "dagger" }
 
 hilt-compiler = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hilt" }
 hilt-pluginGradle = { module = "com.google.dagger:hilt-android-gradle-plugin", version.ref = "hilt" }
@@ -49,6 +51,13 @@ hilt-library = { module = "com.google.dagger:hilt-android", version.ref = "hilt"
 hilt-testing = { module = "com.google.dagger:hilt-android-testing", version.ref = "hilt" }
 
 junit = { module = "junit:junit", version.ref = "junit" }
+
+kotlin-coroutines-android = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-android", version.ref = "coroutines" }
+kotlin-coroutines-core = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-core", version.ref = "coroutines" }
+kotlin-coroutines-test = { module = "org.jetbrains.kotlinx:kotlinx-coroutines-test", version.ref = "coroutines" }
+kotlin-extensions = { module = "org.jetbrains.kotlin:kotlin-android-extensions", version.ref = "kotlin" }
+kotlin-pluginGradle = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
 
 material = { module = "com.google.android.material:material", version.ref = "material" }
 

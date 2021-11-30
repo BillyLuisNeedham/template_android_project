@@ -9,8 +9,7 @@ dependencyResolutionManagement {
 rootProject.name = "multiple-module-detekt-prototype"
 include ':app'
 include ':common-ui'
-enableFeaturePreview("VERSION_CATALOGS")
-
 include ':ui-counter'
 include ':domain'
 include ':data'
+enableFeaturePreview("VERSION_CATALOGS")

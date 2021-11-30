@@ -41,7 +41,6 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion libs.versions.compose.get()
-        kotlinCompilerVersion libs.versions.kotlin.get()
     }
     packagingOptions {
         resources {
@@ -51,7 +50,6 @@ android {
 }
 
 dependencies {
-
     implementation libs.bundles.androidX
     implementation libs.bundles.compose
     implementation libs.material
@@ -60,7 +58,6 @@ dependencies {
     kapt libs.hilt.compiler
     testImplementation libs.junit
     androidTestImplementation libs.androidX.junit
-    androidTestImplementation libs.espresso
     androidTestImplementation libs.compose.uiTestJunit
     debugImplementation libs.bundles.composeDebug
 }

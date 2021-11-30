@@ -31,6 +31,8 @@ android {
 }
 
 dependencies {
+    implementation project(':data')
+    implementation libs.androidX.lifecycle
     implementation libs.hilt.library
     kapt libs.hilt.compiler
     testImplementation libs.junit

@@ -2,3 +2,10 @@ plugins {
     id 'kotlin'
 }
 
+dependencies {
+    api libs.kotlin.stdlib
+    api libs.kotlin.coroutines.core
+    api libs.dagger.dagger
+    testImplementation libs.junit
+
+}

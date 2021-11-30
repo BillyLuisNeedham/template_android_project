@@ -27,7 +27,6 @@ android {
     }
     composeOptions {
         kotlinCompilerExtensionVersion libs.versions.compose.get()
-        kotlinCompilerVersion libs.versions.kotlin.get()
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
@@ -50,7 +49,6 @@ dependencies {
     implementation libs.material
     testImplementation libs.junit
     androidTestImplementation libs.androidX.junit
-    androidTestImplementation libs.espresso
     androidTestImplementation libs.compose.uiTestJunit
     debugImplementation libs.bundles.composeDebug
 
