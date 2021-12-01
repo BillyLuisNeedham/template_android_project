@@ -17,9 +17,7 @@ android {
         versionName libs.versions.versionName.get()
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -34,32 +32,17 @@ android {
     }
     kotlinOptions {
         jvmTarget = '1.8'
-        useIR = true
-    }
-    buildFeatures {
-        compose true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion libs.versions.compose.get()
-    }
-    packagingOptions {
-        resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
-        }
     }
 }
 
 dependencies {
-    api project(':domain')
-    api project(':data-android')
+    api project(':data')
     implementation libs.bundles.androidX
-    implementation libs.bundles.compose
-    implementation libs.material
-    implementation libs.androidX.hilt.compose
+
     implementation libs.hilt.library
     kapt libs.hilt.compiler
+
     testImplementation libs.junit
     androidTestImplementation libs.androidX.junit
-    androidTestImplementation libs.compose.uiTestJunit
-    debugImplementation libs.bundles.composeDebug
+
 }

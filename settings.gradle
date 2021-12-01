@@ -13,3 +13,4 @@ include ':ui-counter'
 include ':domain'
 include ':data'
 enableFeaturePreview("VERSION_CATALOGS")
+include ':data-android'
