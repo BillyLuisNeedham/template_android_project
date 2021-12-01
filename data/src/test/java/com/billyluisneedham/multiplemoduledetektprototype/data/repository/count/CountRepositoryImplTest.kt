@@ -10,7 +10,7 @@ import org.junit.Test
 import java.lang.Exception
 
 
-class CountRepositoryTest {
+class CountRepositoryImplTest {
 
     class TestException : Exception()
 
@@ -25,7 +25,7 @@ class CountRepositoryTest {
                 }
                 override fun getCount(): Flow<Int> = flow {}
             }
-            val countRepository = CountRepository(countLocalDataSource)
+            val countRepository = CountRepositoryImpl(countLocalDataSource)
 
             countRepository.updateCount(expectedCount)
 
@@ -40,7 +40,7 @@ class CountRepositoryTest {
                 override suspend fun updateCount(newCount: Int) {}
                 override fun getCount(): Flow<Int> = flow {}
             }
-            val countRepository = CountRepository(countLocalDataSource = countLocalDataSource)
+            val countRepository = CountRepositoryImpl(countLocalDataSource = countLocalDataSource)
 
             val result = countRepository.updateCount(2)
 
@@ -58,7 +58,7 @@ class CountRepositoryTest {
                 }
                 override fun getCount(): Flow<Int> = flow {}
             }
-            val countRepository = CountRepository(countLocalDataSource = countLocalDataSource)
+            val countRepository = CountRepositoryImpl(countLocalDataSource = countLocalDataSource)
 
             val result = countRepository.updateCount(2)
 
@@ -82,7 +82,7 @@ class CountRepositoryTest {
                 override suspend fun updateCount(newCount: Int) {}
                 override fun getCount(): Flow<Int> = expectedFlow
             }
-            val countRepository = CountRepository(countLocalDataSource = countLocalDataSource)
+            val countRepository = CountRepositoryImpl(countLocalDataSource = countLocalDataSource)
 
             val result = countRepository.getCount().firstOrNull()
 

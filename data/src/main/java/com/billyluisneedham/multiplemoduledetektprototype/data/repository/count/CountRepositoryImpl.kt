@@ -1,18 +1,19 @@
 package com.billyluisneedham.multiplemoduledetektprototype.data.repository.count
 
+import com.billyluisneedham.multiplemoduledetektprototype.domain.repositories.CountRepository
 import javax.inject.Inject
 import javax.inject.Singleton
 
 @Singleton
-class CountRepository @Inject constructor(
+class CountRepositoryImpl @Inject constructor(
     private val countLocalDataSource: CountLocalDataSource
-) {
-    suspend fun updateCount(newCount: Int) =
+): CountRepository {
+    override suspend fun updateCount(newCount: Int) =
         runCatching {
             countLocalDataSource.updateCount(newCount = newCount)
         }.onSuccess {
             Result.success(Unit)
         }
 
-    fun getCount() = countLocalDataSource.getCount()
+    override fun getCount() = countLocalDataSource.getCount()
 }
