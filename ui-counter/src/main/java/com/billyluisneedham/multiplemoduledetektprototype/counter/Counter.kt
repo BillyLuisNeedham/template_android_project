@@ -3,6 +3,6 @@ package com.billyluisneedham.multiplemoduledetektprototype.counter
 import androidx.compose.runtime.Composable
 
 @Composable
-fun CounterScreen() {
+fun Counter() {
     // TODO write
 }
