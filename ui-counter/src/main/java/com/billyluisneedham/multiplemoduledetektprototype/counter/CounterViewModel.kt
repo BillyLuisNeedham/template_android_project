@@ -3,7 +3,6 @@ package com.billyluisneedham.multiplemoduledetektprototype.counter
 import android.util.Log
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import androidx.lifecycle.viewmodel.compose.viewModel
 import com.billyluisneedham.multiplemoduledetektprototype.domain.interactors.UpdateCount
 import com.billyluisneedham.multiplemoduledetektprototype.domain.observers.ObserveCount
 import kotlinx.coroutines.flow.MutableSharedFlow
