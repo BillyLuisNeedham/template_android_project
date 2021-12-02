@@ -1,2 +1,6 @@
 ### App layout
-A multi module app, built out to test detekt and other ideas and libraries in a multi module app.
+The most over engineered counter app ever written.
+
+Built using multiple modules with MVI architecture. Jetpack Compose is used for all UI.
+
+Inspired by tivi https://github.com/chrisbanes/tivi
