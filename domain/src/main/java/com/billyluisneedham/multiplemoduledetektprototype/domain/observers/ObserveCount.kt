@@ -1,6 +1,7 @@
 package com.billyluisneedham.multiplemoduledetektprototype.domain.observers
 
-import com.billyluisneedham.multiplemoduledetektprototype.domain.repositories.CountRepository
+
+import com.billyluisneedham.multiplemoduledetektprototype.data.repository.count.CountRepository
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 

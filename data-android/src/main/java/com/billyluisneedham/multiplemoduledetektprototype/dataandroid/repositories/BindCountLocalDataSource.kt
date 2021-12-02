@@ -8,7 +8,7 @@ import dagger.hilt.components.SingletonComponent
 
 @InstallIn(SingletonComponent::class)
 @Module
-abstract class bindCountLocalDataSource {
+abstract class BindCountLocalDataSource {
 
     @Binds
     abstract fun bindInMemoryCountLocalDataSource(source: InMemoryCountLocalDataSource): CountLocalDataSource

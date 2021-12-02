@@ -1,5 +1,5 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'dagger.hilt.android.plugin'
 
     id 'kotlin-android'
@@ -10,7 +10,6 @@ android {
     compileSdk libs.versions.compileSdk.get() as Integer
 
     defaultConfig {
-        applicationId libs.versions.applicationId.get()
         minSdk libs.versions.minSdk.get() as Integer
         targetSdk libs.versions.targetSdk.get() as Integer
         versionCode libs.versions.versionCode.get() as Integer

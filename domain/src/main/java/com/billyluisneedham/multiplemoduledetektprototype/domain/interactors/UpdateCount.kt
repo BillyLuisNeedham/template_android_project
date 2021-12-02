@@ -1,6 +1,6 @@
 package com.billyluisneedham.multiplemoduledetektprototype.domain.interactors
 
-import com.billyluisneedham.multiplemoduledetektprototype.domain.repositories.CountRepository
+import com.billyluisneedham.multiplemoduledetektprototype.data.repository.count.CountRepository
 import javax.inject.Inject
 
 class UpdateCount @Inject constructor(

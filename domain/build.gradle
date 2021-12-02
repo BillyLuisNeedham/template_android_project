@@ -3,6 +3,7 @@ plugins {
 }
 
 dependencies {
+    api project(':data')
     implementation libs.kotlin.stdlib
     implementation libs.kotlin.coroutines.core
 

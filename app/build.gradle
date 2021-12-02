@@ -54,9 +54,11 @@ dependencies {
     implementation project(':data')
     implementation project(':data-android')
     implementation project(':common-ui')
+    implementation project(':common-ui-resources')
     implementation project(':ui-counter')
     implementation libs.bundles.androidX
     implementation libs.bundles.compose
+    implementation libs.androidX.navigation.compose
     implementation libs.material
     implementation libs.androidX.hilt.compose
     implementation libs.hilt.library

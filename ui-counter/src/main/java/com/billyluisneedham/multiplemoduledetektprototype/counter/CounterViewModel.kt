@@ -5,6 +5,8 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.billyluisneedham.multiplemoduledetektprototype.domain.interactors.UpdateCount
 import com.billyluisneedham.multiplemoduledetektprototype.domain.observers.ObserveCount
+import dagger.hilt.android.HiltAndroidApp
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
@@ -14,6 +16,7 @@ import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
 import javax.inject.Inject
 
+@HiltViewModel
 internal class CounterViewModel @Inject constructor(
     private val updateCount: UpdateCount,
     observeCount: ObserveCount
