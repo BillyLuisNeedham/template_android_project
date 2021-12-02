@@ -1,0 +1,11 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdk libs.versions.compileSdk.get() as Integer
+
+    defaultConfig {
+        minSdk libs.versions.minSdk.get() as Integer
+    }
+}
